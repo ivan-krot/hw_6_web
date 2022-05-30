@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+content-type: text/html
+server: IntelliJ IDEA 2021.3
+date: Mon, 30 May 2022 11:37:52 GMT
+x-frame-options: SameOrigin
+X-Content-Type-Options: nosniff
+x-xss-protection: 1; mode=block
+accept-ranges: bytes
+cache-control: no-cache
+last-modified: Mon, 30 May 2022 08:49:51 GMT
+content-length: 51
+
+<li>Task 1</li>
+<li>Task 2</li>
+<li>Task 3</li>

@@ -2,23 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Моя перша сторінка</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Hometask page</title>
+  <link rel="icon" type="image/x-icon" href="media/colored-elements.jpg">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Моя перша сторінка</h1>
+  <h1>Information</h1>
+  <div class="media">
+    <a href="https://www.linkedin.com/in/ivan-krot-28324a140/" target="_blank" title="Linkedin profile will be opened in a new tab"><img src="media/1624704305180.jfif"/></a>
+    <a href="https://github.com/ivan-krot" target="_blank" title="Github profile will be opened in a new tab"><img src="https://avatars.githubusercontent.com/u/25668783?s=400&u=c37186361318f0ae014336b25acc8811b58554f3&v=4"></a>
+  </div>
+  <div class="socialLinks">
+    <p>Github: <a href="https://github.com/ivan-krot" target="_blank">ivan-krot</a></p>
+
+    <p>Linkedin: <a href="https://www.linkedin.com/in/ivan-krot-28324a140/" target="_blank">ivan-krot</a></p>
+  </div>
   <div class="todoList">
-    <h3>Список задач</h3>
+    <h3>List of tasks</h3>
     <ul id="myList">
     </ul>
-    <input type="text" name="newItemInput" id="newItemInput">
-    <input type="button" name="addListItem" value="Додати задачу" id="addListItem">
-    <input type="button" name="loadItems" value="Завантажити задачі" id="loadItems">
+    <input type="text" name="newItemInput" id="newItemInput" maxlength="50" placeholder="Provide a task name. Max length: 50 characters" title="Max: 50 chars">
+    <input type="button" name="addListItem" value="Add task" id="addListItem">
+    <input type="button" name="loadItems" value="Get tasks" id="loadItems">
+    <input type="button" name="loadItemsWithoutRemoving" value="Get tasks +" id="loadItemsWithoutRemoving">
+    <input type="button" name="deleteAllItems" value="Delete all" id="deleteAllItems">
   </div>
   <div id="dataLoader">
-
     <p id="data"></p>
   </div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -30,3 +30,22 @@ document.getElementById('loadItems').addEventListener('click', () => {
   xhttp.open('GET', '_items.html', true);
   xhttp.send();
 })
+
+document.getElementById('loadItemsWithoutRemoving').addEventListener('click', () => {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    let alreadyAddedTasks = document.getElementById('myList').innerHTML;
+    let fullResponse = alreadyAddedTasks + this.responseText;
+    document.getElementById('myList').innerHTML = fullResponse;
+  }
+  xhttp.open('GET', '_items.html', true);
+  xhttp.send();
+})
+
+//Delete all elements from a list
+document.getElementById('deleteAllItems').addEventListener('click', () => {
+    let element = document.getElementById('myList');
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    }
+})

@@ -1,0 +1,100 @@
+body {
+    margin: 0 auto;
+    padding: 0 2em 2em 2em;
+    background: #eee;
+    background-image: url("https://www.patternpictures.com/wp-content/uploads/Kristal-subtle-glass-white-background-pattern-patternpictures-0220.png");
+    font-family: "Courier New", monospace;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+h1 {
+     padding: 1em;
+     font-size: 3em;
+     font-weight: bold;
+}
+
+.media {
+    text-align: center;
+}
+
+.media :hover {
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: border-radius 1s;
+}
+
+.media img {
+    border-radius: 1em;
+    transition: border-radius 1s;
+}
+
+.media img, .socialLinks > p {
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+
+.socialLinks > p
+{
+    width: 50%;
+    margin-top: 0.5em;
+    float: right;
+}
+
+.socialLinks {
+    display: block;
+
+}
+
+.todoList {
+    float: none;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.todoList h3 {
+    padding: 1em 0 0.5em 0;
+    font-size: 2em;
+}
+
+.todoList ul {
+    margin: 1em;
+    list-style: url('../media/rocket.svg');
+    text-align: left;
+}
+
+#newItemInput {
+    display: block;
+    width: 100%;
+    padding: 0.2em;
+    margin: 1em;
+}
+
+.todoList input[type="button"]{
+    width: 20%;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border-color: gray;
+}
+
+.todoList input[type="button"]:hover{
+    border-color: transparent;
+}
+
+#addListItem {
+    background-color: green;
+}
+
+#loadItems, #loadItemsWithoutRemoving {
+    background-color: gray;
+}
+
+#deleteAllItems {
+    background-color: red;
+}

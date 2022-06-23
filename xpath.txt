@@ -1,0 +1,11 @@
+//div[@class='socialLinks']/p/a[@target='_blank']
+
+//div[@class='media']/a[@title]
+
+//div[@class='media']/a[@title='Linkedin profile will be opened in a new tab']
+
+//div[@class='todoList']/h3/../ul[@id='myList']/*[position() mod 2 = 1] (tasks should be added to the list)
+
+//div[@class='todoList']/*[text() = 'List of tasks']
+
+

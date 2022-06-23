@@ -49,3 +49,20 @@ document.getElementById('deleteAllItems').addEventListener('click', () => {
       element.removeChild(element.firstChild);
     }
 })
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var btt = document.getElementById("backToTop");
+  if (document.documentElement.scrollTop > 100) {
+    btt.style.display = "block";
+  } else {
+    btt.style.display = "none";
+  }
+}
+
+//Scroll to top functionality
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
